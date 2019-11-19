@@ -196,7 +196,7 @@
     <string>Next Page</string>
    </property>
    <property name="shortcut">
-    <string>Right</string>
+    <string>Ctrl+Right</string>
    </property>
   </action>
   <action name="actionPrev_Page">
@@ -211,7 +211,7 @@
     <string>Prev Page</string>
    </property>
    <property name="shortcut">
-    <string>Left</string>
+    <string>Ctrl+Left</string>
    </property>
   </action>
   <action name="actionNext_File">
@@ -226,7 +226,7 @@
     <string>Next File</string>
    </property>
    <property name="shortcut">
-    <string>PgUp</string>
+    <string>Ctrl+PgUp</string>
    </property>
   </action>
   <action name="actionPrev_File">
@@ -241,7 +241,7 @@
     <string>Prev File</string>
    </property>
    <property name="shortcut">
-    <string>PgDown</string>
+    <string>Ctrl+PgDown</string>
    </property>
   </action>
   <action name="actionAbout">
