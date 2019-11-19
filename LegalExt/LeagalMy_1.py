@@ -17,6 +17,9 @@ class Ui_MainWindow(object):
         self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
         self.textEdit.setGeometry(QtCore.QRect(43, 30, 341, 271))
         self.textEdit.setObjectName("textEdit")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(270, 290, 47, 13))
+        self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(300, 410, 381, 171))
         font = QtGui.QFont()
@@ -90,19 +93,12 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-        self.actionOpen.triggered.connect(lambda: self.clicked("Open Was Clicked"))
-        self.actionPrint.triggered.connect(lambda: self.clicked("Print Was Clicked"))
         self.actionExit.triggered.connect(lambda: self.clicked("Exit Was Clicked"))
-        self.actionZoom_In_25.triggered.connect(lambda: self.clicked("Zoom_In_25. Was Clicked"))
-        self.actionZoom_Out_25.triggered.connect(lambda: self.clicked("Zoom_Out_25 Was Clicked"))
-        self.actionFit_To_Window.triggered.connect(lambda: self.clicked("Fit_To_Win Was Clicked"))
-
-
-
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "TextLabel"))
         self.label_2.setText(_translate("MainWindow", "TextLabel"))
         self.menu_File.setTitle(_translate("MainWindow", "&File"))
         self.menu_View.setTitle(_translate("MainWindow", "&View"))
@@ -149,8 +145,9 @@ class Ui_MainWindow(object):
         self.actionAbout_Qt.setShortcut(_translate("MainWindow", "Ctrl+Q"))
 
     def clicked(self, text):
-        self.label_2.setText(text)
-        self.label_2.adjustSize()
+        self.label.setText(text)
+        self.label.adjustSize()
+
 
 if __name__ == "__main__":
     import sys
