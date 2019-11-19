@@ -24,24 +24,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>410</y>
-      <width>381</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>28</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -96,6 +78,11 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <activeon>images/Open.png</activeon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Open...</string>
    </property>
@@ -107,6 +94,10 @@
    </property>
   </action>
   <action name="actionPrint">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Print.png</normaloff>images/Print.png</iconset>
+   </property>
    <property name="text">
     <string>Print...</string>
    </property>
@@ -118,6 +109,10 @@
    </property>
   </action>
   <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Exit.png</normaloff>images/Exit.png</iconset>
+   </property>
    <property name="text">
     <string>Exit</string>
    </property>
@@ -129,6 +124,11 @@
    </property>
   </action>
   <action name="actionZoom_In_25">
+   <property name="icon">
+    <iconset>
+     <activeon>images/Zoom-In.png</activeon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Zoom In(25%)</string>
    </property>
@@ -140,6 +140,10 @@
    </property>
   </action>
   <action name="actionZoom_Out_25">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Zoom-Out.png</normaloff>images/Zoom-Out.png</iconset>
+   </property>
    <property name="text">
     <string>Zoom Out(25%)</string>
    </property>
@@ -151,6 +155,10 @@
    </property>
   </action>
   <action name="actionNormal_Size">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Normal-Size.png</normaloff>images/Normal-Size.png</iconset>
+   </property>
    <property name="text">
     <string>Normal Size</string>
    </property>
@@ -162,6 +170,10 @@
    </property>
   </action>
   <action name="actionFit_To_Window">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Fit-To-Window.png</normaloff>images/Fit-To-Window.png</iconset>
+   </property>
    <property name="text">
     <string>Fit To Window</string>
    </property>
@@ -169,10 +181,14 @@
     <string>Fitting to Window</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Home</string>
+    <string>Ctrl+7</string>
    </property>
   </action>
   <action name="actionNext_Page">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Next-Page.png</normaloff>images/Next-Page.png</iconset>
+   </property>
    <property name="text">
     <string>Next Page</string>
    </property>
@@ -184,6 +200,10 @@
    </property>
   </action>
   <action name="actionPrev_Page">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Prev-Page.png</normaloff>images/Prev-Page.png</iconset>
+   </property>
    <property name="text">
     <string>Prev Page</string>
    </property>
@@ -191,10 +211,14 @@
     <string>Prev Page</string>
    </property>
    <property name="shortcut">
-    <string>Right</string>
+    <string>Left</string>
    </property>
   </action>
   <action name="actionNext_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Next-File.png</normaloff>images/Next-File.png</iconset>
+   </property>
    <property name="text">
     <string>Next File</string>
    </property>
@@ -206,6 +230,10 @@
    </property>
   </action>
   <action name="actionPrev_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/Prev-Page.png</normaloff>images/Prev-Page.png</iconset>
+   </property>
    <property name="text">
     <string>Prev File</string>
    </property>
@@ -217,6 +245,10 @@
    </property>
   </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/About.png</normaloff>images/About.png</iconset>
+   </property>
    <property name="text">
     <string>About </string>
    </property>
@@ -228,6 +260,10 @@
    </property>
   </action>
   <action name="actionAbout_Qt">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/About-Qt.png</normaloff>images/About-Qt.png</iconset>
+   </property>
    <property name="text">
     <string>About Qt</string>
    </property>
@@ -240,5 +276,22 @@
   </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>434</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
