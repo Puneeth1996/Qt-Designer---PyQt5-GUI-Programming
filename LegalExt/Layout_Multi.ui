@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>922</width>
-    <height>627</height>
+    <width>1060</width>
+    <height>674</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,11 +23,26 @@
          <enum>Qt::Vertical</enum>
         </property>
         <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>500</height>
+          </size>
+         </property>
          <property name="text">
-          <string>TextLabel</string>
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>imgInput/CALOSA-2019_01007262.TIF</pixmap>
          </property>
         </widget>
-        <widget class="QWidget" name="">
+        <widget class="QWidget" name="layoutWidget">
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QPushButton" name="pushButton_5">
@@ -149,6 +164,12 @@
         </widget>
         <widget class="QLineEdit" name="lineEdit"/>
         <widget class="QSplitter" name="splitter_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -198,7 +219,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>922</width>
+     <width>1060</width>
      <height>21</height>
     </rect>
    </property>
